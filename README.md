@@ -14,14 +14,13 @@ There are many options for remote-write compatible agents, the official list can
 
 ### Usage
 
-To build k6 binary with the Prometheus remote write output extension use:
-```
-xk6 build --with github.com/grafana/xk6-output-prometheus-remote@latest 
-```
 
-Then run new k6 binary with the following command for using the default configuration (e.g. remote write server url set to `http://localhost:9090/api/v1/write`):
 ```
-./k6 run -o xk6-prometheus-rw script.js 
+docker composer up
+```
+Then run 
+```
+./docker-run.sh samples/scenarios.js
 ```
 
 Check [the documentation](https://k6.io/docs/results-output/real-time/prometheus-remote-write) for advanced configurations, Docker Compose ready to use example or for using the builtin experimental output.
