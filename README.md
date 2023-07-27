@@ -16,7 +16,7 @@ There are many options for remote-write compatible agents, the official list can
 
 
 ```
-docker composer up
+docker compose up
 ```
 Then run 
 ```
